@@ -1,0 +1,75 @@
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8"/>
+
+        <title>Quote Book</title>
+        <link id = "stylesheet" rel="stylesheet" href="StyleSheet_WiseWords.css" />
+    </head>
+
+    <body id = 'main_body'>
+
+        <div id = 'navbar' class = 'navbar'>
+            <h1>Wise Words</h1> 
+            <button id="switch_page_button" class = 'title_btn'>Switch Page</button>
+            <button id="register_button" class = 'title_btn'>Register</button>
+            <button id='logout_button' class = 'logout_button'>Logout</button>
+            <button id = 'login_button' class = 'title_btn'>Login</button>
+        </div>
+        
+
+        <div id = 'mother_grid' class = 'mother_grid'>
+
+            <div class='grid_container'>
+                <label>Quote</label>
+                <textarea rows="2" cols="40" id="input_text"></textarea>
+                <label>Author</label>
+                <textarea rows='1' cols='40' id='author_input_text'></textarea>
+                <label>Score</label>
+                <input type="number" id ="score_input_number" step="1"></input>
+                <label>Notes</label>
+                <textarea rows='1' cols='40' id='notes_input_text'></textarea>
+                <form>
+                    <select id = "type_input" name = "dropdown">
+                        <option value = 0 selected>Wise Words</option>
+                        <option value = 1>Not So Wise Words</option>
+                    </select>
+                </form>
+            </div>
+        
+            <div id ="buttons_div" class="buttons_grid_container">
+                <button id="add_quote_button" class='btn'>Add Quote</button>
+                
+            </div>
+
+        </div> 
+
+        <ol id="phrase-list">
+        </ol>
+        
+    
+
+    <div id = 'login_body' class = "login_body">
+        <h2>Login</h2>
+        <label>Email</label>
+        <input rows="1" cols="30" id="input_email"></input>
+        <label>Password</label>
+        <input rows="1" cols="30" id="input_password"></input>
+        <button id = 'confirm_login_button'>OK</button>
+    </div>
+
+    <div id = 'register_body' class = 'register_body'>
+        <h2>Register</h2>
+        <label>First Name</label>
+        <input rows="1" cols="30" id="input_fn"></input>
+        <label>Last Name</label>
+        <input rows="1" cols="30" id="input_ln"></input>
+        <label>Email</label>
+        <input rows="1" cols="30" id="input_email_register"></input>
+        <label>Password</label>
+        <input rows="1" cols="30" id="input_password_register"></input>
+        <button id = 'confirm_registration_button'>OK</button>
+    </div>
+    <script src="cs3200QuoteBookJS.js"></script>
+    </body>
+</html>

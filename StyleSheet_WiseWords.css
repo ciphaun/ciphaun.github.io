@@ -1,0 +1,146 @@
+﻿.login_body {
+    width: 170px;
+    margin: auto;
+    margin-top: 10%;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    color: rgb(41, 1, 54);
+    font-family: 'Bookman', 'URW Bookman L', serif;
+}
+
+.register_body {
+    width: 170px;
+    margin: auto;
+    margin-top: 10%;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    color: rgb(41, 1, 54);
+    font-family: 'Bookman', 'URW Bookman L', serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #34c990;
+}
+
+.title_btn {
+    background-color: #34c990;
+    color:rgb(9, 0, 12);
+    border: none;
+    float: right;
+    margin-top: 30px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.logout_button {
+    background-color: #34c990;
+    color:rgb(9, 0, 12);
+    border: none;
+    float: right;
+    margin-top: 30px;
+    margin-left: 10px;
+    text-align: left;
+    display: none;
+}
+
+body {
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: white;
+    display: block;
+}
+
+.mother_grid {
+    display: none;
+    grid-template-columns: 320px 100px;
+    justify-content: center;
+}
+
+.grid_container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: 50px 240px;
+    margin-top: 43px;
+    justify-content: center;
+}
+
+.buttons_grid_container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 70px 70px;
+}
+
+.list_buttons_grid_container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 70px 70px;
+    padding-bottom: 4px;
+    justify-content: left;
+}
+
+h1
+{
+    color: rgb(41, 1, 54);
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    float: left;
+    padding-left: 20px;
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    margin-top: 100px;
+}
+
+button {
+    background-color: rgb(23, 0, 31);
+    border-style: solid;
+    color: white;
+    border-color: rgb(23, 0, 31);
+    border-radius: 0px;
+    padding: 5px 6px;
+    display: block;
+    margin-top: 2px;
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    font-weight: bold;
+    
+}
+
+label, textarea, input, select {
+    display: block;
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    }
+label {
+    font-weight: bold;
+    text-align: left;
+    color:rgb(9, 0, 12);
+}
+
+ol {
+    list-style-type: none;
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    color: rgb(37, 37, 37);
+    line-height: 2.5em;
+    background-color: white;
+    border-radius: 2px;
+    display: none;
+    }
+
+.list_item {
+    border-bottom: 1px solid #34c990;
+}
+
+.phrase-name {
+    font-weight: bold;
+}
+
+br {
+    content: " ";
+ }

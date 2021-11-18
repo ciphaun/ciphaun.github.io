@@ -1,0 +1,147 @@
+﻿.login_body {
+    width: 170px;
+    margin: auto;
+    margin-top: 10%;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    color: coral;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.register_body {
+    width: 170px;
+    margin: auto;
+    margin-top: 10%;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    color: coral;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(142, 210, 255);
+}
+
+.title_btn {
+    background-color: rgb(142, 210, 255);
+    color: coral;
+    border: none;
+    float: right;
+    margin-top: 30px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.logout_button {
+    background-color: rgb(142, 210, 255);
+    color: coral;
+    border: none;
+    float: right;
+    margin-top: 30px;
+    margin-left: 10px;
+    text-align: left;
+    display: none;
+}
+
+body {
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: white;
+}
+
+.mother_grid {
+    display: none;
+    grid-template-columns: 320px 100px;
+    justify-content: center;
+}
+
+.grid_container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: 50px 240px;
+    margin-top: 43px;
+    justify-content: center;
+}
+
+.buttons_grid_container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 70px 70px;
+}
+
+.list_buttons_grid_container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 70px 70px;
+    padding-bottom: 4px;
+    justify-content: left;
+}
+
+h1
+{
+    color: rgb(255, 138, 95);
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    padding-left: 20px;
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    margin-top: 95px;
+}
+
+
+
+button {
+    background-color: coral;
+    border-style: solid;
+    color: white;
+    border-color: coral;
+    border-radius: 0px;
+    padding: 5px 6px;
+    display: block;
+    margin-top: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+label, textarea, input, select {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+label {
+    font-weight: bold;
+    text-align: left;
+    color: rgb(80,185,255);
+}
+
+ol {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(37, 37, 37);
+    line-height: 2.5em;
+    background-color: white;
+    border-radius: 2px;
+    display: none;
+    }
+
+.list_item {
+    border-bottom: 1px solid rgb(80,185,255);
+}
+
+.phrase-name {
+    font-weight: bold;
+}
+
+br {
+    content: " ";
+ }
