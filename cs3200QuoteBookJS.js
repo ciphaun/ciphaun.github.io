@@ -1,12 +1,11 @@
-var BASE_URL = "https://quote-book2.herokuapp.com"
-//http://localhost:8080
+
 function createPhraseOnServer(phraseName, authorName, phraseScore, phraseType, phraseNotes) {
     var data = "name=" + encodeURIComponent(phraseName);
     data += "&author=" +  encodeURIComponent(authorName);
     data += "&score=" + encodeURIComponent(phraseScore);
     data += "&type=" + encodeURIComponent(phraseType);
     data += "&notes=" + encodeURIComponent(phraseNotes);
-    fetch(BASE_URL + "/phrases", {
+    fetch("https://quote-book2.herokuapp.com/phrases", {
         method: "POST",
         credentials: "include",
         body: data,
@@ -19,7 +18,7 @@ function createPhraseOnServer(phraseName, authorName, phraseScore, phraseType, p
 };
 
 function deletePhraseFromServer(phrase_id) {
-    fetch(BASE_URL + '/phrases/${phrase_id}', {
+    fetch(`https://quote-book2.herokuapp.com/phrases/${phrase_id}`, {
         method: "DELETE",
         credentials: "include"
     }).then(function (response) {
@@ -34,7 +33,7 @@ function updatePhraseOnServer(phrase_id, new_name, new_author, new_score, new_no
     data += "&type=" + encodeURIComponent(new_type);
     data += "&notes=" + encodeURIComponent(new_notes);
     
-    fetch(BASE_URL + '/phrases/${phrase_id}`,{
+    fetch(`https://quote-book2.herokuapp.com/phrases/${phrase_id}`,{
         method: "PUT",
         credentials: "include",
         body: data,
@@ -86,7 +85,7 @@ function helpLoadPhrasesFromServer(phrase) {
 }
 
 function loadPhrasesFromServer() {
-fetch(BASE_URL + "/phrases" , {
+fetch("https://quote-book2.herokuapp.com/phrases" , {
     credentials: "include"
     }).then(function (response) {
 
@@ -204,7 +203,7 @@ function createUserOnServer (first_name, last_name, email, password) {
     data += "&last_name=" +  encodeURIComponent(last_name);
     data += "&email=" +  encodeURIComponent(email);
     data += "&password=" +  encodeURIComponent(password);
-    fetch(BASE_URL + "/users", {
+    fetch("https://quote-book2.herokuapp.com/users", {
         method: "POST",
         credentials: "include",
         body: data,
@@ -228,7 +227,7 @@ function createUserOnServer (first_name, last_name, email, password) {
 function loginUser (email, password) {
     var data = "email=" + encodeURIComponent(email);
     data += "&password=" +  encodeURIComponent(password);
-    fetch(BASE_URL + "/sessions", {
+    fetch("https://quote-book2.herokuapp.com/sessions", {
         method: "POST",
         credentials: "include",
         body: data,
@@ -252,7 +251,7 @@ function loginUser (email, password) {
 }
 
 function logoutUser () {
-    fetch(BASE_URL + '/sessions', {
+    fetch(`https://quote-book2.herokuapp.com/sessions`, {
         method: "DELETE",
         credentials: "include"
     }).then(function (response) {
@@ -260,6 +259,7 @@ function logoutUser () {
     })
 }
 
+//http://localhost:8080
 
 var addPhraseButton = document.querySelector("#add_quote_button");
 console.log("Add phrase button: ", addPhraseButton)
